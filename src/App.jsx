@@ -10,7 +10,7 @@ function App() {
   const handleGenerateUniversities = async () => {
     try {
       const response = await axios.get(
-        'http://universities.hipolabs.com/search?country=' + searchTerm
+        'https://universities.hipolabs.com/search?country=' + searchTerm
       );
 
       setUniversities(response.data);
